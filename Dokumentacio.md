@@ -1,13 +1,27 @@
 # VIZSGAREMEK
-### *Az oktatási intézmény megnevezése:* Budapesti Műszaki Szakképzési Centrum Neumann János Informatikai Technikum
-### *Szakképesítés neve, száma:* Informatikai rendszer- és alkalmazás-üzemeltető technikus, 5-0612-12-02
+### Budapesti Műszaki Szakképzési Centrum Neumann János Informatikai Technikum
+### *Szakképesítés neve és száma:* Informatikai rendszer- és alkalmazás-üzemeltető technikus, 5-0612-12-02
 ### *Készítők neve, osztálya:* Piedl Tamás, Dobronay Péter; 2/14A
-### *A benyújtás helye, éve:* Budapest, 2024
+### Budapest, 2024.
+### *A dolgozat címe:*
+<br>
 
-### *Vizsgaremek címe:*
 # [placeholder]
 
-## IP-címtábla:
+1. [VIZSGAREMEK](#vizsgaremek)
+2. [\[placeholder\]](#placeholder)
+    1. [Hálózati eszközök IP-címzése](#hálózati-eszközök-ip-címzése)
+    2. [Területek IP-címtáblái:](#területek-ip-címtáblái)
+        1. [HQ](#hq)
+        2. [Raktár](#raktár)
+        3. [Home Office](#home-office)
+        4. [ISP](#isp)
+
+## Hálózati eszközök IP-címzése
+
+Az IP *(Internet Protocol)* címek megfelelő kezelése, kiosztása elengedhetetlen egy hálózatnál, legyen szó akár kis vagy nagy vállalkozásról, szervezetről. Azért, hogy hatékonyan tudjuk kiosztani a véges számú IP-címeket, VLSM-et *(Variable Length Subnet Mask)*, azaz változó hosszúságú alhálózati maszkot használunk, ami lehetőséget ad az hatékonyabb alhálózatokra bontásra, címkiosztásra. Az alhálózatokat úgy hoztuk létre, hogy ha a jövőben még szükség lenne plusz címekre, akkor beleférjenek a már meglévő hálózatokba, de figyelembe vettük, hogy melyik részeken várható esetleges bővítés.
+
+## Területek IP-címtáblái:
 
 ### HQ
 
@@ -32,7 +46,138 @@
             <td>255.255.255.240 (/28); 14 host</td>
         </tr>
         <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td>192.168.0.132</td>
+        </tr>
+        <tr>
             <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>PC0</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>DHCP-től kapva</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>PC1</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>DHCP-től kapva</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Printer0</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Laptop1</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>IP Phone0</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>TV0</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Guest Wifi</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Recepció Guest Wifi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VLAN szám</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hálózati cím</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Maszk (prefix);<br>
+            összesen felhasználható címek</td>
+            <td>255.255.255.X (/Y); Z host</td>
+        </tr>
+        <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Smartphone0</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
@@ -59,7 +204,48 @@
             <td>255.255.255.192 (/26); 62 host</td>
         </tr>
         <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td>192.168.0.132</td>
+        </tr>
+        <tr>
             <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>PC2</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>DHCP-től kapva</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>PC6</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>DHCP-től kapva</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Printer1</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
@@ -86,7 +272,49 @@
             <td>255.255.255.192 (/26); 62 host</td>
         </tr>
         <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
+        </tr>
+        <tr>
+        <tr>
             <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>PC3</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>DHCP-től kapva</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Printer2</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Laptop2</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
@@ -113,7 +341,81 @@
             <td>255.255.255.224 (/27); 30 host</td>
         </tr>
         <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
+        </tr>
+        <tr>
             <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>PC5</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>DHCP-től kapva</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Printer3</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Laptop4</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>IP Phone1</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>TV1</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>Smartphone1</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
@@ -138,6 +440,14 @@
             <td>Maszk (prefix);<br>
             összesen felhasználható címek</td>
             <td>255.255.255.248 (/29); 6 host</td>
+        </tr>
+        <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
         </tr>
         <tr>
             <td colspan="2"><i>Eszközök:</i></td>
@@ -167,7 +477,59 @@
             <td>255.255.255.240 (/28); 14 host</td>
         </tr>
         <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td>192.168.0.129</td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td>192.168.0.132</td>
+        </tr>
+        <tr>
             <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>DNS</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>192.168.0.132</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>FTP</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>192.168.0.133</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>WEB</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>FastEthernet0</td>
+            <td>192.168.0.134</td>
+        </tr>
+        <tr>
+            <td colspan="2"><u>LC</u></td>
+        </tr>
+        <tr>
+            <td><i>Interfész</i></td>
+            <td><i>IP-cím</i></td>
+        </tr>
+        <tr>
+            <td>GigabitEthernet0</td>
+            <td>192.168.0.135</td>
         </tr>
     </tbody>
 </table>
@@ -277,12 +639,17 @@
             <td>255.255.255.240</td>
         </tr>
         <tr>
-            <td colspan="3"><u>Router5</u></td>
+            <td colspan="3"><u>HQEdge</u></td>
         </tr>
         <tr>
             <td><i>Interfész</i></td>
             <td><i>IP-cím</i></td>
             <td><i>Maszk</i></td>
+        </tr>
+        <tr>
+            <td>Serial2/0</td>
+            <td>192.168.0.221</td>
+            <td>255.255.255.252</td>
         </tr>
         <tr>
             <td>GigabitEthernet4/0</td>
@@ -390,8 +757,150 @@
     </tbody>
 </table>
 
+
 ### Raktár
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Management</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VLAN szám</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Hálózati cím</td>
+            <td>192.168.1.128</td>
+        </tr>
+        <tr>
+            <td>Maszk (prefix);<br>
+            összesen felhasználható címek</td>
+            <td>255.255.255.240 (/28); 14 host</td>
+        </tr>
+        <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td>192.168.1.130</td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Dolgozok</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VLAN szám</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Hálózati cím</td>
+            <td>192.168.1.0</td>
+        </tr>
+        <tr>
+            <td>Maszk (prefix);<br>
+            összesen felhasználható címek</td>
+            <td>255.255.255.128 (/25); 126 host</td>
+        </tr>
+        <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td>192.168.1.2</td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+    </tbody>
+</table>
+
+
 
 ### Home Office
 
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Rendszergazdák</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VLAN szám</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Hálózati cím</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>Maszk (prefix);<br>
+            összesen felhasználható címek</td>
+            <td>X (/Y); Z host</td>
+        </tr>
+        <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
 ### ISP
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Rendszergazdák</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VLAN szám</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Hálózati cím</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>Maszk (prefix);<br>
+            összesen felhasználható címek</td>
+            <td>X (/Y); Z host</td>
+        </tr>
+        <tr>
+            <td>Alapértelmezett átjáró</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Beállított DNS-cím</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><i>Eszközök:</i></td>
+        </tr>
+    </tbody>
+</table>
